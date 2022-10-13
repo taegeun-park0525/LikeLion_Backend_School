@@ -1,4 +1,4 @@
-package Wekk4.Algorithm;
+package Wekk4.Mon.Algorithm;
 
 import java.util.Scanner;
 
