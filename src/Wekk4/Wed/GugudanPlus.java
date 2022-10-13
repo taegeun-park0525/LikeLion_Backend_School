@@ -2,7 +2,9 @@ package Wekk4.Wed;
 
 
 interface Operation {
-    int operation(int a, int b);
+    static int operation(int a, int b) {
+        return 0;
+    }
 }
 
 
