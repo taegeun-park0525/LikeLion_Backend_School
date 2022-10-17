@@ -7,8 +7,12 @@ public class StarMain {
         Scanner sc = new Scanner(System.in);
         System.out.println("반복될 줄 수 를 입력하세요.");
         int num = sc.nextInt();
-        RightTriangle rt = new RightTriangle();
 
-        rt.PrintRightTriangle(num);
+        RightTriangle rt = new RightTriangle();
+//        rt.PrintRightTriangle(num);
+
+        Pyramid py = new Pyramid();
+        py.PrintPyramid(num);
+
     }
 }
