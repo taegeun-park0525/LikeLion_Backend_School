@@ -12,7 +12,9 @@ public class StarMain {
 //        rt.PrintRightTriangle(num);
 
         Pyramid py = new Pyramid();
-        py.PrintPyramid(num);
+//        py.PrintPyramid(num);
 
+        Rhombus rh = new Rhombus();
+        rh.PrintRhombus(num);
     }
 }
