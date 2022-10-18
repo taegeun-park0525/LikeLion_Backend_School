@@ -1,4 +1,4 @@
-package Week5.algorithm;
+package Week5.Mon.Algorithm;
 
 public class RightTriangle {
     public void PrintRightTriangle(int num){
