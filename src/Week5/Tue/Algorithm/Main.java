@@ -12,9 +12,9 @@ public class Main {
 
         int n = sc.nextInt();
         //int m = sc.nextInt();
-        //ss.printSquareMatrix(n);
+        ss.printSquareMatrix(n);
         //rs.printRectangleMatrix(n,m);
         //ds.printDonutSquare(n);
-        ps.printParallelogramStar(n);
+        //ps.printParallelogramStar(n);
     }
 }
