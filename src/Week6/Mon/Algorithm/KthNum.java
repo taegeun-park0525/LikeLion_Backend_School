@@ -1,4 +1,4 @@
-package Week6.Algorithm;
+package Week6.Mon.Algorithm;
 
 import java.util.Arrays;
 
