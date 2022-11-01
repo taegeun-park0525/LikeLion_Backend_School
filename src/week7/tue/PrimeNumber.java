@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeNumber {
+
     //나머지연산
     public boolean primeNum1(int num) {
         for (int i = 2; i < num; i++) {
@@ -14,9 +15,24 @@ public class PrimeNumber {
         return true;
     }
 
-    public boolean primeNum2(int num) {
-
+    boolean primeNum2(int num) {
+        for (int i = 2; i < num/2; i++) {
+            if(num%i != 0){
+                return false;
+            }
+        }
+        return true;
     }
+    public boolean primeNum3(int num) {
+        for (int i = 2; i*i <= num; i++) {
+            if(num%i != 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
 
     public int solution(int n) {
         List<Integer> arr = new ArrayList<>();
