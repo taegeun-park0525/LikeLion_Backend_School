@@ -4,16 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeNumber {
+    //나머지연산
     public boolean primeNum1(int num) {
-        int count = 0;
-        for (int i = 1; i <= num; i++) {
-            if(num%i == 0){
-                count++;
+        for (int i = 2; i < num; i++) {
+            if(num%i != 0){
+                return false;
             }
         }
-        return count == 2;
+        return true;
     }
 
+    public boolean primeNum2(int num) {
+
+    }
 
     public int solution(int n) {
         List<Integer> arr = new ArrayList<>();
