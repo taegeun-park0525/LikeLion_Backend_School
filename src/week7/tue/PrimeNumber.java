@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeNumber {
-    public boolean primeNum() {
+    public boolean primeNum1(int num) {
         int count = 0;
-        int[] arr = {13,17,19,23};
-        for (int i = 1; i < arr[1]; i++) {
-            if(arr[1]%i == 0){
+        for (int i = 1; i <= num; i++) {
+            if(num%i == 0){
                 count++;
             }
         }
@@ -29,8 +28,8 @@ public class PrimeNumber {
 
     public static void main(String[] args) {
         PrimeNumber pn = new PrimeNumber();
-
-        boolean result = pn.primeNum();
+        int[] arr = {13,17,19,23};
+        boolean result = pn.primeNum1(arr[1]);
         System.out.println(result);
     }
 }
