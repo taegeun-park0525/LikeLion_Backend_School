@@ -5,25 +5,21 @@ import java.util.List;
 
 public class HarshadNum {
     public boolean solution(int x) {
-        List<Integer> arr = new ArrayList<>();
-        while(x > 0) {
-            arr.add(x%10);
-            x = x / 10;
+        int result = 0;
+        int quotient = x;
+        while(quotient > 0) {
+            result += quotient%10;
+            quotient = quotient / 10;
+            System.out.println(result);
         }
-        System.out.println(arr);
-        boolean answer = true;
-        return answer;
+        if (x%result == 0) {
+            return true;
+        } else return false;
     }
 
     public static void main(String[] args) {
         HarshadNum harshadNum = new HarshadNum();
-        int x = 18;
-        List<Integer> arr = new ArrayList<>();
-        while(x > 0) {
+        System.out.println(harshadNum.solution(18));
 
-            arr.add( x%10 );
-            x = x / 10;
-        }
-        System.out.println(arr);
     }
 }
