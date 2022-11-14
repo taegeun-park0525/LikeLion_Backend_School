@@ -2,6 +2,8 @@ package week8.fri;
 
 import week8.thu.Solution;
 
+import java.util.Arrays;
+
 public class SecretMap {
 
     /*
@@ -16,12 +18,6 @@ public class SecretMap {
 
         String result = "";
 
-        for(int i= A; i>0; i=i/2){
-            result = String.valueOf(i%2) + result;
-            System.out.println(result);
-        }
-
-        System.out.println(result);
 
     }
     //내가생각한거
@@ -46,10 +42,25 @@ public class SecretMap {
         return answer;
     }
 
-    public String[] solution(int n, int[] arr1, int[] arr2) {
-        String[] answer = {};
 
+    String solution(int n, int[] arr1, int[] arr2) {
+        String answer = "";
+        String[] sArr1 = new String[n];
+        String[] sArr2 = new String[n];
+        for (int i = 0; i < n; i++) {
+            // arr1
+            for (int j = 0; j < n; j++) {
+                String binStr1 = getBinaryString(arr1[i]);
+                String binStr2 = getBinaryString(arr2[i]);
+                sArr1[i] = "0".repeat(n - binStr1.length()) + binStr1;
+                sArr2[i] = "0".repeat(n - binStr2.length()) + getBinaryString(arr2[i]);
+            }
+        }
+        System.out.println(Arrays.toString(sArr1));
+        System.out.println(Arrays.toString(sArr2));
 
         return answer;
     }
+
+
 }
