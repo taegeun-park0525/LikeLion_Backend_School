@@ -3,16 +3,16 @@ package week10.mon;
 import java.util.Scanner;
 
 public class Sum1toN {
-    public static void SumFunction(int n, int count, int result) {
+    public static int SumFunction(int n, int count, int result) {
         count ++;
         System.out.println(result);
 
         if(count > n) {
-            return;
+            return result;
         }
 
         result = result + count;
-        SumFunction(n, count, result);
+        return SumFunction(n, count, result);
     }
 
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class Sum1toN {
         int result = 0;
         int count = 0;
 
-        SumFunction(n,count,result);
+        result = SumFunction(n,count, result);
 
         System.out.println(result);
     }
