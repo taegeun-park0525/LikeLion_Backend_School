@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Sum1toN {
     public static int SumFunction(int n, int count, int result) {
         count ++;
-        System.out.println(result);
 
         if(count > n) {
             return result;
