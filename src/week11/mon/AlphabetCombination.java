@@ -1,4 +1,4 @@
-package week11;
+package week11.mon;
 
 public class AlphabetCombination {
 
@@ -22,8 +22,15 @@ public class AlphabetCombination {
         }
 
     }
+
+    public static void printAlpha(char c){
+    if(c>'Z') return;
+        System.out.println(c);
+        printAlpha((char)(c+1));
+    }
     public static void main(String[] args) {
         twoAlpha();
-
+        char c = 'A';
+        printAlpha(c);
     }
 }
