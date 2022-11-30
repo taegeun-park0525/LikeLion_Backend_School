@@ -18,7 +18,7 @@ public class Programmers12916 {
     }
 
     public static boolean solution2(String s) {
-        s.toLowerCase();
+        s = s.toLowerCase();
         int countP = 0;
         int countY = 0;
 
@@ -33,7 +33,7 @@ public class Programmers12916 {
     }
 
     public static void main(String[] args) {
-        String s1 = "pPoooyY"; //true
+        String s1 = "PPoooyY"; //true
         String s2 = "Pyy"; //false
         System.out.println(solution2(s1));
         System.out.println(solution2(s2));
